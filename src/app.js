@@ -8,7 +8,7 @@ console.log(__dirname)
 pdy=path.join(__dirname,'../templates/partial')
 pdx=path.join(__dirname,'../templates/views')
 pdf=path.join(__dirname,'../public')
-port=process.env.PORT||3000
+const port=process.env.PORT||3000
 app.use(express.static(pdf))
 app.set('view engine','hbs')
 app.set('views',pdx)

@@ -4,8 +4,7 @@ const weatherform=document.querySelector('form')
 const search =document.querySelector('input')
 const messageone= document.querySelector('#message-1')
 const messagetwo= document.querySelector('#message-2')
-messageone.textContent='hi'
-messagetwo.textContent='hrishi'
+
 weatherform.addEventListener('submit',(e)=>{
     e.preventDefault()
  const location=search.value

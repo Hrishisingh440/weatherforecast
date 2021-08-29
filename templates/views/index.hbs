@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
-       
+      <title>Weather Forecast</title>  
+       <link rel="icon" href="/img/967229-200.png">
     </head>
-    <body>
+    <style>
+body { 
+  background-image: url('/img/—Pngtree—hand drawn blue sky white_1137685.jpg');
+  margin-top: 8cm;
+}
+</style>
+    <body><center> <font size=14px>
         <div class="main-content">
             {{>header}}
             <p> use this site to get weather</p>
             <form>
-                <input placeholder="location">
-                <button>search</button>
+                <input size="50" height="50" placeholder="location">
+                <button style="background-color:grey;">search</button>
             </form>
+            
         <p id="message-1"></p>
         <p id="message-2"></p>
         {{>footer}}
@@ -19,5 +26,7 @@
         
        
          <script src="\jjj\app.js"></script>
+         </font>
+         </center>
     </body>
 </html>

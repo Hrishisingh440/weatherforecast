@@ -5,9 +5,9 @@ const app= express();
 const geocode=require('./utils/geocode')
 const forecast=require('./utils/forecast')
 console.log(__dirname)
-pdy=path.join(__dirname,'../templates/partial')
-pdx=path.join(__dirname,'../templates/views')
-pdf=path.join(__dirname,'../public')
+const pdy=path.join(__dirname,'../templates/partial')
+const pdx=path.join(__dirname,'../templates/views')
+const pdf=path.join(__dirname,'../public')
 const port=process.env.PORT||3000
 app.use(express.static(pdf))
 app.set('view engine','hbs')

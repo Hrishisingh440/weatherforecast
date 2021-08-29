@@ -13,10 +13,7 @@ messageone.textContent='loading'
 messagetwo.textContent='...'
 
 fetch('/weather?address='+location).then((response)=>{
-    console.log(response.json())
-    if(!response.ok){
-        throw response
-    }
+    
     
     response.json().then((data)=>{
         if(data.error){
